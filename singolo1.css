@@ -1,1 +1,105 @@
+header {
+    width: 1020px;
+    height: 89px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+}
 
+.contact {
+    margin-right: 40px;
+}
+
+.navbar ul{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.li:hover {
+    color:#f06c64;
+}
+
+.navbar ul li a{
+    display: inline-block;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    line-height: 67px; 
+}
+
+ul {
+    list-style-type: none; 
+}
+
+.home {
+    margin-left: -11px;
+    color:#f06c64;
+}
+
+ .navbar :not(:first-child)::before {
+    content: ".";
+    color: #494e62;
+    position: relative;
+    bottom: 3px;
+    right: 9px;
+    margin-top: 9px;
+    font-size: 20px; 
+}  
+
+.logo {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    line-height: 54px;
+    margin-left: 38px;
+}
+
+.star {
+    color: #f06c64
+}
+
+.firstul {
+    letter-spacing: -0.3px;
+}
+
+.slider{
+    width: 1020px;
+    height: 600px;
+    background-color: #f06c64;
+    border-bottom: 15px solid #ea676b;
+}
+
+.vertphone {
+    margin-top: 53px;
+    margin-left: 50px; 
+}
+
+.horphone{
+    margin-bottom: 122px;
+    margin-left: 68px; 
+}
+
+.button {
+    padding: 0px;
+    background-color: #f06c64;
+    position: relative;
+    border: 0px;
+    height: 32px;
+    margin-left: 42px;   
+    bottom: 228px;
+}
+
+.button:hover {
+    background: white;
+}
+
+.lbutton {
+    margin-left: 51px;
+}
