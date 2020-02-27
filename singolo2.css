@@ -84,7 +84,6 @@ ul {
     padding-top: 4px;
 }
 
-
 .row1 {
     margin-bottom: 20px;
     margin-left: -1px;
@@ -92,4 +91,8 @@ ul {
 
 .row2 {
     margin-bottom: 20px;
+}
+
+.pic:nth-child(n + 13){
+    display: none;
 }
