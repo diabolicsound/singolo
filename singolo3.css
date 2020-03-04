@@ -184,3 +184,27 @@ input::-webkit-input-placeholder {
 .adra:hover{
     color: rgb(1, 1, 46);
 }
+
+.footer {
+    width: 1020px;
+    height: 76px;
+    background-color: #2d303a;
+}
+
+.copyright {
+    margin: 35px 0 0 42px;
+}
+
+.footercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 152px;
+    margin-left: 828px;
+    margin-top: -26px;
+}
+
+.footpic:hover {
+    cursor: pointer;
+    background-color: #2d302f;
+}
