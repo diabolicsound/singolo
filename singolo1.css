@@ -98,6 +98,7 @@ ul {
 
 .button:hover {
     background: white;
+    cursor: pointer;
 }
 
 .lbutton {
@@ -120,13 +121,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
-}
-
-.container3  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    
 }
 
 h2 {
@@ -172,7 +167,7 @@ h2 {
 .picbulb, .piclove {
     padding-left: 18px;
     padding-right: 23px;
-    margin-top: -4px;
+    margin-top: -8px;
 }
 
 .piclove {
@@ -180,7 +175,7 @@ h2 {
 }
 
 .picpen{
-    margin-top: -6px;
+    margin-top: -8px;
 }
 
 .picbulb {
@@ -234,13 +229,13 @@ h3 {
 }
 
 .picphone {
-    margin-top: -14px;
+    margin-top: -19px;
 }
 
 .picbub, .picstar {
     padding-right: 21px;
     padding-left: 18px;
-    margin-top: -14px;
+    margin-top: -19px;
 }
 
 .picstar {
