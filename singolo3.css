@@ -11,7 +11,7 @@
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 900;
-    text-align: left;
+    text-align: justify;
     padding-top: 71px;
     letter-spacing: -0.1px;
 }
@@ -24,13 +24,13 @@
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
     margin-bottom: 33px;
     margin-top: 27px;
 }
 
 .form, .lasttophead, .lasttoptext {
-    padding-left: 40px;
+    margin-left: 40px;
 }
 
 .name , .email, .subject {
@@ -122,7 +122,7 @@ input::-webkit-input-placeholder {
     margin-left: 680px;
     color: #f0d8d9;
     font-family: "Lato";
-    text-align: left;
+    text-align: justify;
 }
 
 .contactinfo {
@@ -191,20 +191,25 @@ input::-webkit-input-placeholder {
     background-color: #2d303a;
 }
 
-.copyright {
-    margin: 35px 0 0 42px;
-}
-
 .footercontainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 152px;
     margin-left: 828px;
-    margin-top: -26px;
+    margin-top: -23px;
 }
 
 .footpic:hover {
     cursor: pointer;
     background-color: #2d302f;
+}
+
+.copyrightsymbol {
+    font-family: "Lato";
+    color:#666d89;
+    font-size: 12px;
+    margin: 0 0 0 43px;
+    padding-top: 32px;
+    letter-spacing: -0.3px;
 }

@@ -5,7 +5,7 @@
     border-bottom: 6px solid #323746;
 }
 
-h2 {
+.portf {
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -29,14 +29,14 @@ h2 {
     padding-left: 40px;
 }
 
-ul {
+.firstunord {
     display: flex;
     list-style-type: none;
     margin-top: -35px;
     margin-left: 1px;
 }
 
-.navbar ul li a {
+.navbar .firstunord .firstlist a {
     display: inline-block;
     justify-content: space-between;
     text-decoration: none;
@@ -60,17 +60,12 @@ ul {
     padding-right: 6px;
 }
 
-.wd {
-    margin-left: 1px;
-}
-
 .gd {
    margin-left: -1px;
 }
 
 .artwork {
     padding-right: 5px;
-    margin-left: -1px;
 }
 
 
@@ -78,28 +73,27 @@ ul {
     color:#dedede;
 }
 
-.container {
+.containerportf {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: stretch;
-    padding-left: 41px;
-    padding-right: 39px;
-    padding-top: 4px;
+    list-style: none;
+    margin: 20px 40px 0 40px;
+    padding: 0px;
 }
 
-.row1 {
+.seclist {
+    height: 187px;
+    width: 220px;
     margin-bottom: 20px;
-    margin-left: -1px;
-}
-
-.row2 {
-    margin-bottom: 20px;
-    margin-left: -1px;
 }
 
 .row3 {
-    margin-left: -1px;
+    margin-bottom: 0px;
+}
+
+.seclist:nth-child(n + 13){
+    display: none;
 }
 
 .pic:nth-child(n + 13){
@@ -131,7 +125,7 @@ ul {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
     margin-left: 40px;
 }
 
@@ -139,20 +133,9 @@ ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: stretch;
-    margin-top: 47px;
-}
-
-.adam {
-    margin-left: 40px;
-}
-
-.desmond {
-    margin-left: -1px;
-}
-
-.scolara {
-    margin-right: 40px;
+    list-style: none;
+    margin: 47px 41px 0 39px;
+    padding: 0px;
 }
 
 .bottomh3 {
@@ -162,72 +145,42 @@ ul {
     font-family: "Lato";
     font-weight: 900;
     text-align: left;
-    position: absolute;
-}
-
-.adamname {
-    margin-left: 38px;
-}
-
-.desmondname {
-    padding-left: 358px;
-}
-
-.scolaraname {
-    margin-left: 678px;
+    margin: 14px 0 0 -2px;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .p3 {
     width: 300px;
-    height: 175px;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 21px;
     color: #767e9e;
     font-family: "Lato";
     font-weight: 400;
-    text-align: left;
-    margin-top: 45px;
-    position: absolute;
+    text-align: justify;
+    margin-top: 10px;
 }
 
-.padam {
-    margin-left: 40px;
-    padding-right: 90px;
-    letter-spacing: -0.1px;
-}
-
-.pdesmond {
-    margin-left: 358px;
-}
-
-.pscolara {
-    margin-left: 678px;
-    letter-spacing: -0.1px;
+.pscolara, .padam {
+    letter-spacing: -0.06px;
 }
 
 .icons {
-    position: absolute;
-    margin-top: 111px;
+    margin-top: 24px;
 }
-
-.bpic{
-    margin-left: 2px;
-    margin-right: 2px;
+ .bpic {
+    margin-right: 4px;
 }
 
 .bpic:hover {
     background-color:cornsilk;    
+    cursor: pointer;
 }
 
-.first.fb {
-    margin-left: 41px;
-}
-.s.fb {
-    margin-left: 162px;
-}
 
-.th.fb {
-    margin-left: 162px;
-}
+
+
 
 
