@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" width="45" height="45">
+	<defs>
+		<image width="45" height="45" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAMAAAANxBKoAAAAAXNSR0IB2cksfwAAAcJQTFRFAAAA+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr69/f32trayMjIw8PDysrK4ODg+vr6+Pj4urq6vb2909PT+vr639/fv7+/5+fn+fn53t7eu7u77Ozs+vr6+vr6+vr6z8/P4+Pj19fX3Nzc+vr6zc3N6enp2NjY+vr6+vr66+vr+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr68fHx5OTk2dnZ+vr6+vr60tLSx8fH4eHh+vr6+vr6y8vL4uLi5eXlxcXFvr6+9fX1+vr66urq+vr6+vr68/Pz9vb2+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6MX66lQAAAJZ0Uk5TACdehqWwu6qcd04RM5Lk//3IcBVFwPeUHRyu83YE7MIb/ucwhPE3cuomQvzXCxSen0EtzQGmShj///////+3/////8H/////////ZAn4/////zb////YXP/7BXgph30faw8a////vdn///98k////////zn/29T//1vv0z4Iifm+Z9IXzA2vaG6k63OW7QdIv+hxLgYS5ARM6QAAAcxJREFUeJyl1WVTw0AQBuDiFDuc4lDcrbgdUCju7sWKu7u7y//l0iZkL22Sm+H9lL19ZnJJ5jYazf/i5Ozi6ubu4an18lajPr5+6C/+AYFBCjY4BEkSGqaTseERUsslMiraEfaKcYRJYuPssTZeBiOkT5DiRFlLkpRM4xQljFBqGsTpGcoaZWaJOFuvghHKEXWuKkYoT8D5/gy6wMDrQgaMUJENF8NHLCktKxdSUQl1lf3bqy7DuIbHNRjXglZGsVXXgSUjrm8w8demxibcDHotHG5tAyvtuANUnbgLVK6c7oab68EloOrFfaDq5/QArWE1SOmhYaJHWDUKJ9qFWY8SPcas84keZ9YTRE8yazPRwbQ2yWo99wanaD0Nqhk8C6o565e3gJVaPC8W1Qt4EfSWrHqZujdeWV2zxbiONzZBz3aUt+BWjE1YTP026Ozwp2EX8r2OSiFr+7Ch5fUBYsihmdfRRwx66e/MH8tPNSGWE3FEnKrhMx8wq4bPVfQFNQfNl4p4TEPn6loBJxokWnNzK2fb7qSWxHAf6RAf2c16W3QP9gPx8cnhb8cap+cXyl7eZ8laLq9vp+8fHByy3H5+KVIh3z861f8wQ34BCSmVk9T/gYAAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Home Button" href="#img1" x="0" y="0" />
+</svg>

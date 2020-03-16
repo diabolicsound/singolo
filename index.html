@@ -6,7 +6,7 @@
       <link href="@font-face.css" rel="stylesheet">
       <link href="style.css" rel="stylesheet">
     </head>
-    <body>
+    <body> <div id="opac">
            <header>
            <a name = "homea"> <h1 class="logo">SINGOLO<span class="star">*</span></h1></a>
             <nav class="navbar">
@@ -28,14 +28,26 @@
             </ul>
            </nav>
           </header>
-          <main>
+          <main id="main">
             <section class="slider">
-            <div class="phones">
-              <button class="button"><img src="assets/rightchev.svg" class="rightchev" alt="rightchev"></button>
-              <img src="assets/icv.svg" class="vertphone" alt="phone1">
-              <img src="assets/ich.svg" class = "horphone" alt="phone2">
-              <button class="button lbutton"><img src="assets/leftchev.svg" class="leftchev" alt="leftchev"></button>
-            </div>    
+              <div class="caruosel">
+              <div id="carousel" class="slidercontainer">
+                <div id="phone" class="phones activesli">
+                  <a id="az2"><img id="hidscr2" src="assets/Screenvert.svg" class="hiddenscreen screen scr2" alt="screen"></a>
+                <img src="assets/icv.svg" class="vertphone" alt="phone1">
+                <a id="az"><img id="hidscr" src="assets/Screen.svg" class="hiddenscreen screen" alt="screen"></a>
+                <img src="assets/ich.svg" class = "horphone" alt="phone2">
+              </div> 
+              <div id="phone2" class="phones slider2">
+                <img src="assets/Slide-2.svg" class="vertphonesli vertphone" alt="phone1">
+              </div>
+
+              
+              
+            <button id="lbut" class="button lbutton"><img src="assets/leftchev.svg" class="leftchev" alt="leftchev"></button>
+                <button id="rbut" class="button rbutton"><img src="assets/rightchev.svg" class="rightchev" alt="rightchev"></button>
+           </div>
+          </div>
             </section>
           <section class="ourservices">           
             <a name = "ourser"><div class="block2"></a>
@@ -107,18 +119,18 @@
            </nav>
           </div>
        <ul id="secmenu" class="containerportf">
-        <li class="seclist r1"><img src="assets/pic1.svg" alt ='pic1' class="row1 pic"></li>
-        <li class="seclist r1"><img src="assets/pic4.svg" alt ='pic2' class="row1 pic"></li>
-        <li class="seclist r1"><img src="assets/pic7.svg" alt ='pic3' class="row1 pic"></li>
-        <li class="seclist r1"><img src="assets/pic10.svg" alt ='pic4' class="row1 pic"></li>
-        <li class="seclist r2"><img src="assets/pic2.svg" alt ='pic5' class="row2 pic"></li>
+        <li id="pi1"class="seclist r1"><img id="dead" src="assets/pic1.svg" alt ='pic1' class="row1 pic"></li>
+        <li id="pi2" class="seclist r1"><img src="assets/pic4.svg" alt ='pic2' class="row1 pic"></li>
+        <li id="pi3" class="seclist r1"><img src="assets/pic7.svg" alt ='pic3' class="row1 pic"></li>
+        <li id="pi4" class="seclist r1"><img src="assets/pic10.svg" alt ='pic4' class="row1 pic"></li>
+        <li id="pi5" class="seclist r2"><img src="assets/pic2.svg" alt ='pic5' class="row2 pic"></li>
         <li class="seclist r2"><img src="assets/pic5.svg" alt ='pic6' class="row2 pic"></li>
         <li class="seclist r2"><img src="assets/pic8.svg" alt ='pic7' class="row2 pic"></li>
         <li class="seclist r2"><img src="assets/pic11.svg" alt ='pic8' class="row2 pic"></li>
-        <li class="seclist r3 row3"><img src="assets/pic3.svg" alt ='pic9' class="pic"></li>
-        <li class="seclist r3"><img src="assets/pic6.svg" alt ='pic10' class="pic"></li>
-        <li class="seclist r3"><img src="assets/pic9.svg" alt ='pic11' class="pic"></li>
-        <li class="seclist r3"><img src="assets/pic12.svg" alt ='pic12' class="pic"></li>
+        <li id="pi9" class="seclist r3 row3"><img src="assets/pic3.svg" alt ='pic9' class="pic"></li>
+        <li id="pi10" class="seclist r3"><img src="assets/pic6.svg" alt ='pic10' class="pic"></li>
+        <li id="pi11" class="seclist r3"><img src="assets/pic9.svg" alt ='pic11' class="pic"></li>
+        <li id="pi12" class="seclist r3"><img src="assets/pic12.svg" alt ='pic12' class="pic"></li>
        </ul>
        </section>
        <section class="aboutus">
@@ -168,19 +180,20 @@
          </ul>
        </section>
        <section class="getaquote">
+        <a name = "contacta"></a>
         <h2 class="lasttophead">Get a Quote</h2>
         <p class="lasttoptext">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
             Duis mollis, non commodo luctus, nisi erat porttitor
            ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. </p>
      <div class="extracontainer">
-         <form action="#" class="form" method="GET">
+      
+         <form id="form" action="#" class="form" method="GET">
              <input id="fname" class="name" type="text" placeholder="Name (Required)" required>
              <input id="femail" class="email" type="email" required placeholder="Email (Required)">
              <input id="fsubject" class="subject" type="text" placeholder="Subject">
-             <textarea  name="fdetails" placeholder='Describe your project in detail...' class="projdetail texta" ></textarea>
+             <textarea id="fdetails" name="fdetails" placeholder='Describe your project in detail...' class="projdetail texta" maxlength = "100" ></textarea>
+             <button id="fsubmit" type="" class="submitb">Submit</button>
             </form>
-             <button id="fsubmit" class="submitb">Submit</button> 
-
              <div id = "message-block" class="hidden">
                <div id = "message">
                 <p>Письмо отправлено <br>
@@ -191,7 +204,7 @@
                </div>
              </div>
      
-    <a name = "contacta"> <h3 class="contactinfo">Contact Information</h3></a>
+     <h3 class="contactinfo">Contact Information</h3>
      <p class="contactp">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh.
     Fusce vitae aliquam tellus. Proin sit amet volutpat libero.
     Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p> 
