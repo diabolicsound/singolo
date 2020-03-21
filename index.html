@@ -2,13 +2,14 @@
 <html lang = "en">
     <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Singolo</title>
       <link href="@font-face.css" rel="stylesheet">
       <link href="style.css" rel="stylesheet">
     </head>
-    <body> <div id="opac">
-           <header>
-           <a name = "homea"> <h1 class="logo">SINGOLO<span class="star">*</span></h1></a>
+    <body> <div id = "wrapper">
+           <header class="menup">
+            <h1 class="logo">SINGOLO<span class="star">*</span></h1></a>
             <nav class="navbar">
             <ul id="menu" class="firstul">
                 <li> 
@@ -17,7 +18,7 @@
                   <a href="#ourser" class="ser li services">SERVICES</a>
                 </li>
                 <li>
-                  <a href="#portfa" class="ser li portfolioli">PORTFOLIO</a>
+                  <a href="#portfolia" class="ser li portfolioli">PORTFOLIO</a>
                 </li>
                 <li>
                   <a href="#abouta" class="li ser about">ABOUT</a>
@@ -29,8 +30,9 @@
            </nav>
           </header>
           <main id="main">
-            <section class="slider">
-              <div class="caruosel">
+            <a name = "homea"></a>
+            <section  class="slider menup">
+              <div id = "homea" class="caruosel lol">
               <div id="carousel" class="slidercontainer">
                 <div id="phone" class="phones activesli">
                   <a id="az2"><img id="hidscr2" src="assets/Screenvert.svg" class="hiddenscreen screen scr2" alt="screen"></a>
@@ -49,8 +51,8 @@
            </div>
           </div>
             </section>
-          <section class="ourservices">           
-            <a name = "ourser"><div class="block2"></a>
+          <section  class="ourservices menup">           
+            <a name = "ourser"><div id="ourser" class="block2 lol"></a>
               <h2> Our Services</h2>
                <p class="p1"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
                  Duis mollis, non commodo luctus, nisi erat porttitor
@@ -94,9 +96,10 @@
                 Fusce vitae aliquam tellus.</p>
                </li>
             </ul>
-        </section>
-        <section id = "portfolio" class="portfolio">
-         <a name = "portfa"> <div class="containerbig"></a>
+        </section> 
+        <section  class="portfolio menup">
+          <a name = "portfolia"></a>
+          <div  class="containerbig">
            <h2 class="portf">Portfolio</h2>
            <p class="text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
                eget lacinia odio sem nec elit.
@@ -118,6 +121,7 @@
                </ul>
            </nav>
           </div>
+         <div id="portfolia"  class="lol">
        <ul id="secmenu" class="containerportf">
         <li id="pi1"class="seclist r1"><img id="dead" src="assets/pic1.svg" alt ='pic1' class="row1 pic"></li>
         <li id="pi2" class="seclist r1"><img src="assets/pic4.svg" alt ='pic2' class="row1 pic"></li>
@@ -132,15 +136,17 @@
         <li id="pi11" class="seclist r3"><img src="assets/pic9.svg" alt ='pic11' class="pic"></li>
         <li id="pi12" class="seclist r3"><img src="assets/pic12.svg" alt ='pic12' class="pic"></li>
        </ul>
+      </div>
        </section>
-       <section class="aboutus">
-            <a name = "abouta"> <div class="bottomcontainer1"></a>
+       <section class="aboutus menup">
+             <div id = "abouta" class="bottomcontainer1 lol">
              <h2 class="bottomh2 portf"> About Us</h2>
              <p class="bottomp">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
               Duis mollis, non commodo luctus, nisi erat porttitor
              ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
              </div>
          <ul class="bottomcontainer2">
+          <a name = "abouta"></a>
             <li class="bottomcont2"> 
                 <img src="assets/adam.svg" alt="Adam" class="adam"> 
                 <h3 class="bottomh3">Adam Jensen</h3>
@@ -168,7 +174,7 @@
               <li class="bottomcont2">
              <img src="assets/scolara.svg" alt="scolara" class="scolara">
              <h3 class="bottomh3">Scolara Visari</h3>
-             <p class="p3 psocala"> Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
+             <p id = "contacta" class="p3 psocala lol"> Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
                   et consequat felis. Quisque condimentum.</p>
                   <div class="icons">
                   <a href="#"><img src="assets/facebook.svg" alt="facebook" class="fb bpic"></a>
@@ -179,14 +185,14 @@
               </li>
          </ul>
        </section>
+
+
        <section class="getaquote">
-        <a name = "contacta"></a>
         <h2 class="lasttophead">Get a Quote</h2>
         <p class="lasttoptext">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
             Duis mollis, non commodo luctus, nisi erat porttitor
            ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. </p>
-     <div class="extracontainer">
-      
+           <div class="extracontainer">
          <form id="form" action="#" class="form" method="GET">
              <input id="fname" class="name" type="text" placeholder="Name (Required)" required>
              <input id="femail" class="email" type="email" required placeholder="Email (Required)">
@@ -203,7 +209,6 @@
                 <button id="close-btn">Ok</button>
                </div>
              </div>
-     
      <h3 class="contactinfo">Contact Information</h3>
      <p class="contactp">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh.
     Fusce vitae aliquam tellus. Proin sit amet volutpat libero.
@@ -215,7 +220,11 @@
     <p class="adrp place">Elm St. 14/05 Lost City</p>
     <a href="tel:035283318635" class="adra tel place">03528 331 86 35</a>
     <a href="mailto:info@singolo.com" class="adra mailto place">info@singolo.com</a>
+    <a name = "contacta"></a>
+  </div>
+
         </section>
+       
         </main>
         <footer class="footer">
           <p class="copyrightsymbol">© Copyright 2013</p>

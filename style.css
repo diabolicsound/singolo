@@ -1,13 +1,21 @@
 *{
     user-select: none;
+    
 }
+
 header {
-    width: 1020px;
+    position: fixed;
+    margin-top: -8px;
+    width: 1024px;
     height: 89px;
     display: flex;
     justify-content: space-between;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
+}
+
+#main {
+    width: 1024px;
 }
 
 .contact {
@@ -43,7 +51,7 @@ ul {
     margin-left: -11px;
 }
 
-a.active  {
+.active  {
     color:#f06c64;
 }
 
@@ -76,7 +84,6 @@ a.active  {
 }
 
 .slider{
-    width: 1020px;
     height: 594px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
@@ -91,14 +98,14 @@ a.active  {
 }
 
 .phones {
-    visibility: hidden;
+    visibility: hidden; 
     opacity: 0;
-    transition: all ease 1s;
+    transition: all ease 0.5s;
 }
 
 .phones.activesli {
     opacity: 1;
-   visibility: visible;
+    visibility: visible;
 }
 
 .vertphone {
@@ -155,7 +162,6 @@ a.active  {
 }
 
 .next {
-    position: absolute;
     top: 0;
     width: 100%;
 }
@@ -166,7 +172,7 @@ a.active  {
 
 .to-right{
     animation-name: right;
-    animation-direction: reverse;
+    animation-direction: reverse; 
 }
 
 .from-left{
@@ -189,10 +195,10 @@ a.active  {
 
 @keyframes right{
     from {
-        left: 100%;
+        left: 0;
     }
     to {
-        left: 0;
+        left: 100%;
     }
 }
 
@@ -221,7 +227,6 @@ a.active  {
 }
 
 .ourservices{
-    width: 1020px;
     height: 493px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
@@ -308,7 +313,6 @@ h2 {
 }
 
 .portfolio {
-    width: 1020px;
     height: 863px;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
@@ -399,9 +403,20 @@ li .change {
 }
 
 .seclist {
-    height: 187px;
-    width: 220px;
+    flex: 1 0 20% ;
+    margin: 10px;
     margin-bottom: 20px;
+}
+
+.seclist ::before {
+    content: "";
+    float: left;
+    padding-top: 100%;
+}
+
+.seclist img {
+    height: 100%;
+    width: 100%;
 }
 
 li .active2 {
@@ -437,7 +452,6 @@ li .active2 {
 }
 
 .aboutus {
-    width: 1020px;
     height: 728px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
@@ -515,8 +529,7 @@ li .active2 {
 }
 
 .getaquote {
-    width: 1020px;
-    height: 648px;
+    height: 708px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
 }
@@ -703,7 +716,7 @@ input::-webkit-input-placeholder {
 }
 
 .footer {
-    width: 1020px;
+    width: 1024px;
     height: 76px;
     background-color: #2d303a;
 }
@@ -751,6 +764,12 @@ input::-webkit-input-placeholder {
     padding-left: 20px;
 }
 
-.opac {
-    opacity: 0.5;
+@media  (max-width:1020px) {
+    #main, header {width: 100vw;}
+}
+
+@media  (max-width:768px) {
+    .seclist {
+        flex: 1 0 23% ;
+    }
 }
