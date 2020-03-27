@@ -3,9 +3,130 @@
     
 }
 
+body {
+    margin-left: 0;
+}
+
+.navb2 {
+    display: none;
+    margin-top: -8px;
+}
+
+.check-nav {
+    display: none;
+}
+
+.topli {
+    padding-top: 165px;
+}
+
+.dispnone {
+    display: none;
+}
+
+#navbarul li {
+    display: block;
+    line-height: 29px;
+    text-align: left;
+    transition: 0.5 all ease;
+}
+
+ .divb {
+     position: absolute;
+     width: 25px;
+     height: 2.4px;
+     background-color:#ffffff;
+     left: 20px;
+ }
+
+ .one {
+     top: 26px;
+ }
+
+ .two {
+     top: 36px;
+ }
+
+ .three {
+     top: 46px;
+ }
+
+.navbar-burger {
+    display: none;
+    margin-top: -23px;
+    background-color:#2d303a;
+    height: 184vh;
+    padding-left: 71px;
+    width: 54vw;
+    box-shadow: 252px 0px 60px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-b {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.035em;
+    width: 205px;
+    height: 31px;
+    margin-bottom: 27px;
+}
+
+.navbar-burger .logo {
+    margin-top: 32px;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 64px;
+    margin-bottom: 0;
+}
+
+.navba:hover {
+    color: #f06c64;
+}
+
+label {
+    display: block;
+}
+
+.navba {
+    text-decoration: none;
+    color: white;
+}
+
+.check-nav:checked ~ .navb2 {
+    width: 65vw;
+}
+
+.check-nav:checked ~.navbar-burger {
+    display: block;
+}
+
+.check-nav:checked ~ label .one {
+    transform: rotate(90deg);
+    top: 32.4px;
+    left: 10px;
+}
+
+.check-nav:checked ~ label .two {
+    transform: rotate(90deg);
+    top: 32.4px;
+}
+
+.check-nav:checked ~ label .three {
+    transform: rotate(90deg);
+    top: 32.4px;
+    left: 30px;
+}
+
+
+#wrapper {
+    margin-top: 95px;
+}
+
 header {
     position: fixed;
-    margin-top: -8px;
+    margin-top: -95px;
     width: 1024px;
     height: 89px;
     display: flex;
@@ -105,18 +226,26 @@ ul {
 
 .phones.activesli {
     opacity: 1;
-    visibility: visible;
+    visibility: visible; 
+}
+
+.slider2{
+    height: 659px; 
+    margin-top: -596px;
+    margin-left: -126px;
+    background: #648BF0;
 }
 
 .vertphone {
-    margin-top: 5%;
-    margin-left: 11%; 
+    margin-top: 51px;
+    margin-left: 112px; 
 }
 
 .horphone{
-    margin-bottom: 11.7%;
-    margin-left: 6.7%; 
+    margin-bottom: 120px;
+    margin-left: 68px;
 }
+
 
 #az {
     width: 460px;
@@ -154,13 +283,6 @@ ul {
     display: block;
 }
 
-.slider2{
-    height: 659px;
-    margin-top: -596px;
-    margin-left: -126px;
-    background: #648BF0;
-}
-
 .next {
     top: 0;
     width: 100%;
@@ -189,7 +311,7 @@ ul {
         left: 0;
     }
     to {
-        left: -100%;
+        left: -150%;
     }
 }
 
@@ -198,7 +320,7 @@ ul {
         left: 0;
     }
     to {
-        left: 100%;
+        left: 150%;
     }
 }
 
@@ -215,14 +337,14 @@ ul {
 }
 
 .lbutton {
-    top: 52%;
-    left: 965px;
+    top: 360px;
+    left: 972px;
     position: absolute;
 }
 
 .rbutton {
-    top: 52%;
-    left: 4%;
+    top: 360px;
+    left: 40px;
     position: absolute;
 }
 
@@ -255,7 +377,6 @@ h2 {
 
 .p1 {
     width: 940px;
-    height: 57px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
@@ -332,14 +453,18 @@ h2 {
 
 .text {
     width: 940px;
-    height: 57px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
     text-align: left;
-    padding-left: 40px;
+    margin-left: 40px;
+}
+
+.navbar2{
+    margin-top: 44px;
+    margin-bottom: -8px;
 }
 
 .firstunord {
@@ -398,7 +523,7 @@ li .change {
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
-    margin: 20px 40px 0 40px;
+    margin: 20px 40px 0 30px;
     padding: 0px;
 }
 
@@ -421,26 +546,6 @@ li .change {
 
 li .active2 {
     border: 5px solid #F06C64;
-}
-
-.r1 {
-    order: 1;
-}
-
-.r2 {
-    order: 2;
-}
-
-.r3 {
-    order: 3;
-}
-
-.r4 {
-    order: 4;
-}
-
-.r5 {
-    order: 5;
 }
 
 .seclist:nth-child(n + 13){
@@ -481,10 +586,29 @@ li .active2 {
 .bottomcontainer2 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     list-style: none;
     margin: 46px 40px 0 40px;
     padding: 0px;
+}
+
+.bottomcont2 {
+    margin-left: 20px;
+    height: 445px;
+    width: 300px;
+}
+
+.ad {
+    margin-left: 0;
+}
+
+.bottomcont2 ::before {
+    content: "";
+    float: left;
+    padding-top: 100%;
+}
+
+ .resppic {
+    width: 100%;
 }
 
 .bottomh3 {
@@ -495,14 +619,13 @@ li .active2 {
     font-weight: 900;
     text-align: left;
     margin: 14px 0 0 -2px;
-    width: 300px;
+    height: 17px;
     white-space: nowrap;
     overflow: hidden; 
     text-overflow: ellipsis;
 }
 
 .p3 {
-    width: 300px;
     font-size: 12px;
     line-height: 21px;
     color: #767e9e;
@@ -529,7 +652,7 @@ li .active2 {
 }
 
 .getaquote {
-    height: 708px;
+    height: 647px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
 }
@@ -545,6 +668,13 @@ li .active2 {
     letter-spacing: -0.1px;
 }
 
+.extracontainer {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 40px;
+}
+
 .lasttoptext {
     width: 940px;
     height: 57px;
@@ -558,12 +688,11 @@ li .active2 {
     margin-top: 27px;
 }
 
-.form, .lasttophead, .lasttoptext {
+ .lasttophead, .lasttoptext {
     margin-left: 40px;
 }
 
 .name , .email, .subject {
-    position: absolute;
     font-size: 12px;
     line-height: 22px;;
     font-family: "Lato";
@@ -588,15 +717,14 @@ li .active2 {
 }
 
 .email{
-    margin-top: 67px;
+    margin-top: 15px;
 }
 
 .subject{
-    margin-top: 121px;
+    margin-top: 15px;
 }
 
 .projdetail { 
-    position: absolute;
     font-size: 12px;
     line-height: 22px;;
     font-family: "Lato";
@@ -607,12 +735,11 @@ li .active2 {
     border-radius: 5px;
     border: 0px;
     background-color: #d6564f;
-    margin-top: 15px;
     padding-left: 14px;
     padding-top: 6px;
     resize: none;
     height: 193px;
-    margin-top: 177px;
+    margin-top: 18px;
 }
 
 .submitb {
@@ -623,8 +750,8 @@ li .active2 {
     font-weight: 700;
     text-align: left;
     color: wheat;
-    margin-top: 396px;
-    margin-left: 60px;
+    margin-top: 240px;
+    margin-left: -400px;
     border-color: wheat;
     border-radius: 5px;
     background-color: #d6564f;
@@ -642,14 +769,11 @@ input::-webkit-input-placeholder {
     color: #f48c8f;
 }
 
-.extracontainer {
-    display: flex;
-    justify-content: space-between;
+    .seclist .active2 {
+    height: auto;
 }
 
 .contactinfo, .contactp, .adra, .adrp {
-    position: absolute;
-    margin-left: 680px;
     color: #f0d8d9;
     font-family: "Lato";
     text-align: justify;
@@ -664,51 +788,52 @@ input::-webkit-input-placeholder {
     letter-spacing: -0.1px;
 }
 
+.formcont{
+    width: 620px;
+}
+
+.formcont2 {
+    width: 308px;
+    height: 212px;
+    margin-left: 18px;
+}
+
+.fm {
+}
+
 .contactp {
-    width: 300px;
-    height: 175px;
     font-size: 12px;
     line-height: 22px;
     font-weight: 400;
-    margin-top: 43px;
+    margin-top: -8px;
     letter-spacing: -0.04px;
 }
 
-.infopic {
-    position: absolute;
-    
-}
-
 .location {
-    margin-top: 155px;
-    margin-left: 683px;
+    margin-top: 6px;
+    margin-left: 3px;
 }
 
-.phonecall {
-    margin-top: 175px;
-    margin-left: 681px;
-}
-
-.mail {
-    margin-top: 201px;
-    margin-left: 680px;
-}
 
 .adrp, .adra{
     font-size: 12px;
     line-height: 22px;
     font-weight: 400;
-    margin-top: 150px;
-    margin-left: 703px;
     text-decoration: none;
+    margin-top: -20px;
+    margin-left: 23px;
+}
+
+.place {
+    margin-bottom: 0;
 }
 
 .tel {
-    margin-top: 172px;
+    margin-left: 8px;
 }
 
 .mailto {
-    margin-top: 193px;
+    margin-left: 6px;
 }
 
 .adra:hover{
@@ -719,15 +844,6 @@ input::-webkit-input-placeholder {
     width: 1024px;
     height: 76px;
     background-color: #2d303a;
-}
-
-.footercontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 152px;
-    margin-left: 828px;
-    margin-top: -23px;
 }
 
 .footpic:hover {
@@ -746,7 +862,7 @@ input::-webkit-input-placeholder {
 
 #message-block {
     position: absolute;
-    margin:70px 0 0 400px;
+    margin:-295px 0 0 324px;
     background:#e6e5e5;
     padding: 0 212px 0 0;
     width: 20%;
@@ -764,12 +880,509 @@ input::-webkit-input-placeholder {
     padding-left: 20px;
 }
 
-@media  (max-width:1020px) {
-    #main, header {width: 100vw;}
+.footerresp {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.liresp {
+    width: 146px;
+}
+
+.liresp2 {
+    width: 140px;
+    margin-top: 22px;
+}
+
+@media  (max-width:1019px) {
+    #main, header, .footer {width: 100vw;}
+
+    .vertphone {
+        height: 65vh;
+        width: 24vw;
+        margin-top: 6vh;
+        margin-left: 10vw; 
+    }
+    
+    .horphone{
+        height: 34vh;
+        width: 47vw;
+        margin-bottom: 17vh;
+        margin-left: 6.3vw; 
+    }
+
+    .lbutton {
+        left: 95.1vw;
+        top: 47.7vh;
+    }
+
+    .rbutton {
+        left: 4vw;
+        top: 47.7vh;
+    }
+
+    .container1 {
+        margin: 0 45px 0 47px;
+    }
+
+    .block {
+        margin-right: 23px;
+    }
+
+    h2 {
+        margin: 0px 0 27px 47px;
+    }
+
+    .ourservices {
+        height: 650px;
+    }
+
+    .text {
+        width: 82vw;
+    }
+
+    .p3 {
+        height: 10vh;
+    }
+
+    .p1 {
+        width: 90vw;
+        margin-left: 47px;
+    }
+
+    .seclist {
+        flex: 1 0 23%;
+    }
+
+    .bottomcontainer2 {
+        margin: 53px 40px 75px 40px;
+    }
+
+    .bottomcont2 {
+        width: 28vw;
+        height: 58vh;
+        flex: 1 0 20%;
+    }
+
+    .portfolio {
+        height: auto;
+    }
+
+    .containerportf {
+        margin: 20px 30px 57px 30px;
+    }
+
+    .bottomh3 {
+        height: 2.4vh;
+    }
+
+    .submitb {
+        position: inherit;
+        margin-left: auto;
+        margin-top: 14px;
+    }
+
+    .getaquote {
+        height: auto;
+    }
+
+    .bottomp {
+        height: auto;
+        width: auto;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .lasttoptext {
+        width: auto;
+        height: auto;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .contactp {
+        width: 26vw;
+    }
+
+    .projdetail, .name, .email, .subject {
+        width: 59.1vw;
+    } 
+
+    .formcont2 {
+        width: 30.6vw;
+    }
+
+    .aboutus {
+        height: auto;
+     }
+
 }
 
 @media  (max-width:768px) {
+    .slider {
+       /* height: 446px;*/
+        height: 60vw;
+    }
+
+    .lbutton {
+        left: 94.1vw;
+        top: 40vw;
+    }
+
+    .rbutton {
+        left: 4vw;
+        top: 40vw;
+    }
+
+    h2 {
+        padding-top: 9vw;
+    }
+
+    .vertphone {
+        height: 45vw;
+        width: 22vw;
+    }
+
+    .horphone {
+        margin-bottom: 7vh;
+        height: 24vw;
+        width: 50vw;
+    }
+
+    .portfolio {
+        height: auto;
+    }
+
     .seclist {
         flex: 1 0 23% ;
     }
-}
+    
+    .p1 {
+        width: 86.5vw;
+    }
+
+    .extracontainer {
+        margin-right: 40px;
+    }
+
+    .portf {
+        padding-top: 62px;
+    }
+
+    .bottomcontainer2 {
+        margin: 28px 40px 75px 40px;
+    }
+
+    .lasttophead {
+        padding-top: 53px;
+        margin-bottom: 19px;
+    }
+
+
+    @media  (max-width:767px) {
+        .navb2 {
+            display: block;
+        }
+
+        .logo {
+            line-height: 24px;
+            font-size: 20px;
+            margin-top: 24px;
+            margin-left: 39.5vw;
+            margin-right: 43vw;
+        }
+
+        #az {
+            display: none;
+        }
+
+        #az2 {
+            display: none;
+        }
+
+        header {
+            margin-top: -77px;
+            height: 71px;
+        }
+
+        #wrapper {
+            margin-top: 77px;
+        }
+
+        .containerportf {
+            margin: 20px 20px 57px 20px;
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        .container1 {
+            margin: 0 30px 0px 30px;
+            flex-direction: column;
+        }
+
+        .ourservices {
+            height: 1060px;
+        }
+
+        .block {
+            margin-right: 0;
+        }
+
+        h2 {
+            margin: 0px 0 27px 30px;
+        }
+        
+        .p1 {
+            margin-left: 30px;
+        }        
+
+        .seclist {
+            flex: 1 0 31%;
+        }
+
+        .seclist:nth-child(n + 9){
+            display: none;
+        }
+        
+        .pic:nth-child(n + 9){
+            display: none;
+        }
+
+        .aboutus {
+            height: auto ;
+        }
+
+        .bottomcontainer2 {
+            flex-direction: column;
+            margin: 14px 30px 45px 30px;
+        }
+
+        .bottomcont2 {
+            flex: none;
+            margin-left: 0;
+            margin-top: 34px;
+            width: 314px;
+            height: 452px;
+        }
+
+        .ad {
+            margin-top: 0;
+        }
+
+        .p3 {
+            height: 37px;
+        }
+
+        .bottomp {
+            height: auto;
+            width: auto;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        .lasttophead, .lasttoptext, .extracontainer {
+            margin-left: 31px;
+            padding-left: 0;
+        }
+
+        .portf, .text, .firstunord {
+            margin-left: 30px;
+        }
+
+        .firstunord {
+            padding-left: 0;
+        }
+
+        .liresp {
+            display: none;
+        }
+
+        .liresp2 {
+            margin: 22px auto;
+        }
+
+
+    }
+
+
+    @media  (max-width:663px) {
+        .bottomh2 {
+            margin-left: 30px;
+        }
+
+        .getaquote {
+            height: auto;
+        }
+
+
+        .p1 {
+            width: 81vw;
+        }
+
+        .submitb {
+            margin-left: -45vw;
+        }
+
+        
+
+        .extracontainer {
+            flex-wrap: wrap;
+            padding-left: 0;
+        }
+
+        .formcont2 {
+            height: auto;
+            margin-top: 60px;
+        }
+
+        .contactp {
+            width: auto;
+        }
+
+        .formcont2 {
+            width: auto;
+            margin-left: 0;
+            margin-top: 32px;
+        }
+
+       
+
+        .projdetail, .name, .email, .subject {
+            width: 80.1vw;
+        }
+
+        .submitb {
+            position: inherit;
+            margin-left: auto;
+            text-align: center;
+            margin-top: 14px;
+            width: 83.1vw;
+        }
+
+        .contactinfo {
+            margin-top: 0;
+        }
+
+
+    }
+    
+    @media  (max-width:463px) {
+        .submitb {
+            width: 85vw;
+        }
+    }
+
+
+    @media  (max-width:375px) {
+        .slider {
+            height: 208px;
+        }
+
+        .vertphone {
+            margin-top: 20px;
+            height: 189px;
+            width: 88px;
+        }
+
+        .horphone {
+            height: 97px;
+            width: 177px;
+            margin-bottom: 6vh;
+        }
+
+        .rbutton {
+            top: 50vw;
+            left: auto;
+        }
+
+        .lbutton {
+            left: 93vw;
+            top: 50vw;
+        }
+
+        .rightchev {
+            width: 62%;
+        }
+
+        .leftchev {
+            height: 16.73px;
+            width: 9.91px;
+        }
+
+        .seclist:nth-child(n + 9){
+            display: none;
+        }
+        
+        .pic:nth-child(n + 9){
+            display: none;
+        }
+        .seclist {
+            flex: 1 0 40% ;
+        }
+
+        .portf {
+            padding-top: 52px;
+        }
+        
+        .lasttophead {
+            padding-top: 44px;
+        }
+
+        .containerportf {
+            margin: 20px 20px 33px 20px;
+        }
+         
+        .footerresp {
+            padding-left: 0;
+        }
+
+        @media  (max-width:374px) {
+            .parbeg {
+                width: 56.4vw;
+            }
+            .container1 {
+                margin: 0 30px 68px 30px;
+            }
+
+            .ourservices {
+                height: auto;
+            }
+            
+
+            .horphone {
+                margin-left: 3vw;
+            }
+
+        .bottomcont2 {
+            width: 81vw;
+        }
+
+        .p3 {
+            height: auto;
+        }
+
+        .projdetail, .name, .email, .subject {
+            width: 76.1vw;
+        }
+
+        .submitb {
+            width: 81vw;
+        }
+
+        .extracontainer {
+            margin-right: 30px;
+        }
+
+        .firstlist {
+            padding-right: 2px;
+        }
+
+        .bottomcont2 {
+            height: 56.5vh;
+        }
+
+    }

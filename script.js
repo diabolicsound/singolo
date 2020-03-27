@@ -11,14 +11,14 @@ document.addEventListener('scroll', onScroll);
 
 function onScroll(event) {
   const pos = window.scrollY;
-  const sections = document.querySelectorAll('#wrapper .lol');
+  const sections = document.querySelectorAll('#wrapper section');
   const links =  document.querySelectorAll('.firstul  a');
 
   sections.forEach((element) => {
-    if (element.offsetTop <= pos && (element.offsetTop + element.offsetHeight) > pos) {
+    if (element.offsetTop - 100 <= pos && (element.offsetTop + element.offsetHeight) > pos) {
       links.forEach((link) => {
         link.classList.remove('active');
-        if (element.getAttribute('id') === link.getAttribute('href').substring(1)) {
+        if (element.getAttribute('id') == link.getAttribute('href').substring(1)) {
          link.classList.add('active');
         }
       })
@@ -28,15 +28,26 @@ function onScroll(event) {
 
 
 
-SECMENU.addEventListener('click', (event) => {
-    SECMENU.querySelectorAll('img').forEach(element => element.classList.remove('active2'));
-    event.target.classList.add('active2');
+document.getElementById('navbarul').addEventListener('click', (event) => {
+     document.getElementById('check-nav').checked = false;
 }) 
+
+SECMENU.addEventListener('click', (event) => {
+  SECMENU.querySelectorAll('img').forEach(element => element.classList.remove('active2'));
+  event.target.classList.add('active2');
+})
 
 
 THIRDMENU.addEventListener('click', (event) => {
     THIRDMENU.querySelectorAll('a').forEach(element =>element.classList.remove('active3'));
     event.target.classList.add('active3');
+    let img = SECMENU.getElementsByTagName('img');
+    let vari = '';
+    for (let i = 0; i < img.length - 1; i++) {
+        vari = img[i].src;
+        img[i].src = img[i + 1].src;
+        img[i + 1].src = vari;
+    }
 })
 
 
@@ -64,51 +75,6 @@ CLOSE_BUTTON.addEventListener('click', () => {
 
 let arr = Array.prototype.slice.call(SECMENU.querySelectorAll('li'));
 
-  document.getElementById('firstunord').addEventListener('click', () => {{
-    document.getElementById('pi1').classList.contains('r1') == true ?  document.getElementById('pi1').classList.replace ('r1', 'r5') 
-    : document.getElementById('pi1').classList.replace ('r5', 'r3');
-    
-  if (document.getElementById('pi1').classList.contains('r3')) {
-    document.getElementById('pi1').classList.replace ('r3', 'r2')
-  }
- 
-  else if (document.getElementById('pi1').classList.contains('r2')) {
-    document.getElementById('pi1').classList.replace ('r2', 'r4')
-  }
-  else if (document.getElementById('pi1').classList.contains('r4')) {
-    document.getElementById('pi1').classList.replace ('r4', 'r1')
-  }
-
-    document.getElementById('pi2').classList.contains('r1') == true ?  document.getElementById('pi2').classList.replace ('r1', 'r4') 
-    : document.getElementById('pi2').classList.replace ('r4', 'r2');
-
-    if (document.getElementById('pi2').classList.contains('r2')) {
-        document.getElementById('pi2').classList.replace ('r2', 'r3')
-      }
-      else if (document.getElementById('pi2').classList.contains('r3')) {
-        document.getElementById('pi2').classList.replace ('r3', 'r1')
-      }
-
-    document.getElementById('pi3').classList.contains('r1') == true ?  document.getElementById('pi3').classList.replace ('r1', 'r3') 
-    : document.getElementById('pi3').classList.replace ('r3', 'r5')
-
-  if (document.getElementById('pi3').classList.contains('r5')) {
-    document.getElementById('pi3').classList.replace ('r5', 'r1')
-  }
-
-  else if (document.getElementById('pi3').classList.contains('r1')) {
-    document.getElementById('pi3').classList.replace ('r1', 'r3')
-  }
-  else if (document.getElementById('pi1').classList.contains('r3')) {
-    document.getElementById('pi1').classList.replace ('r3', 'r2')
-  }
-
-  document.getElementById('pi4').classList.contains('r1') == true ?  document.getElementById('pi4').classList.replace ('r1', 'r5') 
-    : document.getElementById('pi4').classList.replace ('r5', 'r1')
-  }})
-
-
-
 let items = document.querySelectorAll('.phones')
 let currentItem = 0;
 let isEnabled = true;
@@ -121,15 +87,15 @@ function hideItem(direction) {
     isEnabled = false;
     items[currentItem].classList.add(direction);
     items[currentItem].addEventListener('animationend', function() {
-        this.classList.remove('activesli', direction);
+      this.classList.remove('activesli', direction);
     })
 }
 
 function showItem(direction) {
     items[currentItem].classList.add(direction);
     items[currentItem].addEventListener('animationend', function(){
-        this.classList.remove(direction);
-        this.classList.add('activesli');
+      this.classList.remove(direction);
+      this.classList.add('activesli');
         isEnabled = true
     })
 }
@@ -141,7 +107,7 @@ function previousItem(n) {
 }
 
 function nextItem(n) {
-    hideItem('to-right');
+    hideItem('to-left');
     changeCurrentItem(n + 1);
     showItem('from-left');
 }
@@ -154,10 +120,9 @@ document.querySelector('.lbutton').addEventListener('click', function() {
 
 document.querySelector('.rbutton').addEventListener('click', function() {
     if (isEnabled) {
-        previousItem(currentItem);
+        nextItem(currentItem);
     }
 })
-
 
 
 document.getElementById('az').addEventListener('click', () => {
