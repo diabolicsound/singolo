@@ -4,7 +4,8 @@ const THIRDMENU = document.getElementById('firstunord')
 const BUTTON = document.getElementById('fsubmit');
 const CLOSE_BUTTON = document.getElementById('close-btn');
 const SLI_CONT = document.getElementById('rbut');
-const a = SECMENU.querySelectorAll('img')
+const a = SECMENU.querySelectorAll('img');
+const NAV_CHANGE = SECMENU.getElementsByTagName('li');
 
 
 document.addEventListener('scroll', onScroll);
@@ -23,6 +24,16 @@ function onScroll(event) {
         }
       })
   }})
+  document.querySelectorAll('#wrapper section').forEach((element) => {
+    if (element.offsetTop - 100 <= window.scrollY && (element.offsetTop + element.offsetHeight) > window.scrollY) {
+        document.querySelectorAll('.navbar-burger a').forEach((link) => {
+        link.classList.remove('active');
+        if (element.getAttribute('id') == link.getAttribute('href').substring(1)) {
+         link.classList.add('active');
+        }
+      })
+  }})
+
 }
 
 
@@ -38,15 +49,14 @@ SECMENU.addEventListener('click', (event) => {
 })
 
 
+let random = '';
 THIRDMENU.addEventListener('click', (event) => {
     THIRDMENU.querySelectorAll('a').forEach(element =>element.classList.remove('active3'));
     event.target.classList.add('active3');
-    let img = SECMENU.getElementsByTagName('img');
-    let vari = '';
-    for (let i = 0; i < img.length - 1; i++) {
-        vari = img[i].src;
-        img[i].src = img[i + 1].src;
-        img[i + 1].src = vari;
+    for (let j = 0; j < 11; j++) { 
+    random = NAV_CHANGE[j].innerHTML;
+    NAV_CHANGE[j].innerHTML = NAV_CHANGE[j + 1].innerHTML;
+    NAV_CHANGE[j + 1].innerHTML = random;
     }
 })
 

@@ -3,8 +3,16 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin-left: 0;
+}
+
+.menup {
+    z-index: 10;
 }
 
 .navb2 {
@@ -434,7 +442,7 @@ h2 {
 }
 
 .portfolio {
-    height: 863px;
+    height: 894px;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
 }
@@ -523,7 +531,7 @@ li .change {
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
-    margin: 20px 40px 0 30px;
+    margin: 20px 40px 54px 30px;
     padding: 0px;
 }
 
@@ -1028,12 +1036,12 @@ input::-webkit-input-placeholder {
 
     .lbutton {
         left: 94.1vw;
-        top: 40vw;
+        top: 39vw;
     }
 
     .rbutton {
         left: 4vw;
-        top: 40vw;
+        top: 39vw;
     }
 
     h2 {
@@ -1046,7 +1054,7 @@ input::-webkit-input-placeholder {
     }
 
     .horphone {
-        margin-bottom: 7vh;
+        margin-bottom: 12vh;
         height: 24vw;
         width: 50vw;
     }
@@ -1283,7 +1291,7 @@ input::-webkit-input-placeholder {
         }
 
         .vertphone {
-            margin-top: 20px;
+            margin-top: 13px;
             height: 189px;
             width: 88px;
         }
@@ -1291,17 +1299,17 @@ input::-webkit-input-placeholder {
         .horphone {
             height: 97px;
             width: 177px;
-            margin-bottom: 6vh;
+            margin-bottom: 7vh;
         }
 
         .rbutton {
-            top: 50vw;
+            top: 48vw;
             left: auto;
         }
 
         .lbutton {
-            left: 93vw;
-            top: 50vw;
+            left: 92vw;
+            top: 48vw;
         }
 
         .rightchev {
@@ -1321,7 +1329,8 @@ input::-webkit-input-placeholder {
             display: none;
         }
         .seclist {
-            flex: 1 0 40% ;
+            flex: 1 0 40%;
+            margin: 7px;
         }
 
         .portf {
@@ -1333,11 +1342,19 @@ input::-webkit-input-placeholder {
         }
 
         .containerportf {
-            margin: 20px 20px 33px 20px;
+            margin: 0px 23px 33px 23px;
         }
          
         .footerresp {
             padding-left: 0;
+        }
+
+        .liresp2 {
+            margin-left: 112px
+        }
+
+        .containerbig {
+            margin-bottom: 24px;
         }
 
         @media  (max-width:374px) {
@@ -1359,6 +1376,7 @@ input::-webkit-input-placeholder {
 
         .bottomcont2 {
             width: 81vw;
+            height: 444px;
         }
 
         .p3 {
@@ -1381,8 +1399,12 @@ input::-webkit-input-placeholder {
             padding-right: 2px;
         }
 
-        .bottomcont2 {
-            height: 56.5vh;
+        .liresp2 {
+            margin-left: auto;
+        }
+
+        .lbutton {
+            left: 94vw;
         }
 
     }
