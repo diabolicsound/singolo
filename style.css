@@ -135,7 +135,7 @@ label {
 header {
     position: fixed;
     margin-top: -95px;
-    width: 1024px;
+    width: 1020px;
     height: 89px;
     display: flex;
     justify-content: space-between;
@@ -144,7 +144,7 @@ header {
 }
 
 #main {
-    width: 1024px;
+    width: 1020px;
 }
 
 .contact {
@@ -806,9 +806,6 @@ input::-webkit-input-placeholder {
     margin-left: 18px;
 }
 
-.fm {
-}
-
 .contactp {
     font-size: 12px;
     line-height: 22px;
@@ -849,7 +846,7 @@ input::-webkit-input-placeholder {
 }
 
 .footer {
-    width: 1024px;
+    width: 1020px;
     height: 76px;
     background-color: #2d303a;
 }
@@ -906,7 +903,9 @@ input::-webkit-input-placeholder {
 
 @media  (max-width:1019px) {
     #main, header, .footer {width: 100vw;}
-
+    #az2, #az {
+        display: none;
+    }
     .vertphone {
         height: 65vh;
         width: 24vw;
@@ -1030,7 +1029,6 @@ input::-webkit-input-placeholder {
 
 @media  (max-width:768px) {
     .slider {
-       /* height: 446px;*/
         height: 60vw;
     }
 
