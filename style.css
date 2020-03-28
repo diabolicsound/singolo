@@ -970,7 +970,7 @@ input::-webkit-input-placeholder {
 
     .bottomcont2 {
         width: 28vw;
-        height: 61vh;
+        height: 49vh;
         flex: 1 0 20%;
     }
 
@@ -983,7 +983,7 @@ input::-webkit-input-placeholder {
     }
 
     .bottomh3 {
-        height: 2.4vh;
+        height: 2.6vh;
     }
 
     .submitb {
