@@ -4,7 +4,7 @@
 
 https://diabolicsound.github.io/singolo/
 
-### Requirments 
+### Attention
 
-https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/singolo-cross-check-1.md
+При проверке задания Singolo Responsive, пожалуйста, после перехода в режим эмуляции, сделайте размер панели разработчика минимальным и перезайдите в данный режим.(Что бы не появлялся горизонтальный скролл из-за вертикального)
 
