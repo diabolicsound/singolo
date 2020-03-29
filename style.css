@@ -349,7 +349,7 @@ ul {
 
 .lbutton {
     top: 360px;
-    left: 946px;
+    left: 958px;
     position: absolute;
 }
 
@@ -1047,7 +1047,7 @@ input::-webkit-input-placeholder {
     }
 
     .lbutton {
-        left: 92.6vw;
+        left: 93.6vw;
         top: 39vw;
     }
 
@@ -1323,7 +1323,7 @@ input::-webkit-input-placeholder {
         }
 
         .lbutton {
-            left: 91.8vw;
+            left: 92.8vw;
             top: 48vw;
         }
 
