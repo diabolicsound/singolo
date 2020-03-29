@@ -904,7 +904,7 @@ input::-webkit-input-placeholder {
     margin-top: 22px;
 }
 @media  (max-width:1021px) {
-    #main, header, .footer {width: 99vw;}
+    #main, header, .footer {width: 100vw;}
 }
 
 
@@ -913,7 +913,7 @@ input::-webkit-input-placeholder {
         width: auto;
     }
 
-    #main, header, .footer {width: 99vw;}
+    #main, header, .footer {widows: 100vw;}
     /*#wrapper {
         width: 100vw;
     }*/
