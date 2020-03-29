@@ -5,11 +5,13 @@
 
 html {
     scroll-behavior: smooth;
+    width: 0;
 }
 
 body {
     margin-left: 0;
     margin: 0;
+    width: 1020px;
 }
 
 .menup {
@@ -347,7 +349,7 @@ ul {
 
 .lbutton {
     top: 360px;
-    left: 962px;
+    left: 946px;
     position: absolute;
 }
 
@@ -901,9 +903,20 @@ input::-webkit-input-placeholder {
     width: 140px;
     margin-top: 22px;
 }
+@media  (max-width:1021px) {
+    #main, header, .footer {width: 99vw;}
+}
+
 
 @media  (max-width:1019px) {
-    #main, header, .footer {width: 100vw;}
+    body {
+        width: auto;
+    }
+
+    #main, header, .footer {width: 99vw;}
+    /*#wrapper {
+        width: 100vw;
+    }*/
     #az2, #az {
         display: none;
     }
@@ -1034,7 +1047,7 @@ input::-webkit-input-placeholder {
     }
 
     .lbutton {
-        left: 94.1vw;
+        left: 92.6vw;
         top: 39vw;
     }
 
@@ -1050,6 +1063,10 @@ input::-webkit-input-placeholder {
     .vertphone {
         height: 45vw;
         width: 22vw;
+    }
+
+    .bottomcont2 {
+        height: 378px;
     }
 
     .horphone {
@@ -1306,7 +1323,7 @@ input::-webkit-input-placeholder {
         }
 
         .lbutton {
-            left: 92vw;
+            left: 91.8vw;
             top: 48vw;
         }
 
